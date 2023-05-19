@@ -1,11 +1,11 @@
 # JAVA
  ☕ Detalhes e fundamentos resumidos sobre linguagem JAVA.
 
-## Modificadores de acesso
+## Modificadores de acesso 📦
 - **private**: So pode ser acessado na propria classe;
 - **protected** : So pode ser acessado no mesmo pacote ou em subclasses de pacotes diferentes;
 - **public**: Por ser acessado por todas classes;
-- **(nada)**: So pode ser acessado nas classes do mesmo pacote.
+- **(nada)**: So pode ser acessado nas classes do mesmo pacote. 
 
 ## Membros estáticos
 
@@ -16,6 +16,17 @@ Exemplo:
 Classe calc = new Classe(); //Sem static
 Classe.Calcular();  //Com static
 ```
+
+## Enumerações
+Palavra chave> **enum**
+>Um tipo de enum é um tipo de dados especial que permite que uma variável seja um conjunto de constantes predefinidas
+```java
+public enum Dia {
+    SEGUNDA, TERÇA, QUARTA, QUINTA, SEXTA, SABADO, DOMINGO 
+}
+```
+
+
 ## Comportamento da Memória
 ### Boxing 
 Processo de conversão de um objeto tipo valor para um objeto tipo referência compatível;
@@ -41,3 +52,16 @@ Object obj = x;
 int y = (int) obj; //Cast
 ```
 _Ressalva-se: Wrapper aceitam valores nulos._
+
+
+### Basico
+> Estruturas usuais, comum em muito linguagem, mudandado apenas alguns detalhes.
+
+#### Laços 🔄
+
+- **for each**: sintaxe mais simplificada para percorrer coleções.
+```java
+for (String obj : vetor){
+   sysout(obj);
+}
+```
