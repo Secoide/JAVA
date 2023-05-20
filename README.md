@@ -33,7 +33,8 @@ public static void main(){
  Teste tt = new Teste();      //Não sera possivel instanciiar
 }
 ```
-
+>Atenção: Se um metodo é abstrato a classe obrigatoriamente devera ser abstrata também.
+>Os métodos abstratos não possuem implementação.
 - **super**: Chama a implementação de um superclasse na subclasse.
 - **final**: evita que a classe seja herdada e o metodo nao seja sobreposto
 ```java
