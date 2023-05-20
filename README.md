@@ -1,29 +1,73 @@
 # JAVA
  ☕ Detalhes e fundamentos resumidos sobre linguagem JAVA.
 
-## Modificadores de acesso 📦
-- **private**: So pode ser acessado na propria classe;
-- **protected** : So pode ser acessado no mesmo pacote ou em subclasses de pacotes diferentes;
+## Classes
+
+### Herança ⬅️
+Associação que permite uma subclasse herde todos os dados de uma outra classe.
+- **extends**: Extende todos os atributos e metodos da classe mãe.
+```java
+public class ClasseFilho extends ClasseMae
+```
+### Modificadores de acesso 📦
+- **private**: Só pode ser acessado na própria classe;
+- **protected** : Só pode ser acessado no mesmo pacote ou em subclasses de pacotes diferentes;
 - **public**: Por ser acessado por todas classes;
-- **(nada)**: So pode ser acessado nas classes do mesmo pacote. 
+- **(nada)**: Só pode ser acessado nas classes do mesmo pacote. 
 
-## Membros estáticos
+ 
 
+
+### Membros Estaticos, Métodos
 - **static:** Não precisa instanciar objeto.
-
 Exemplo: 
 ```java
 Classe calc = new Classe(); //Sem static
 Classe.Calcular();  //Com static
 ```
+- **super**: Chama a implementação de um superclasse na subclasse.
+- **final**: evita que a classe seja herdada e o metodo nao seja sobreposto
+```java
+public final class Exemplo
+public class Subexemplo extends Exemplo //Erro: não é possivel extender classe com final
+
+
+public final void Teste() //qualquer outra subClasse extendida, não poderá sobrepor este metodo.
+```
+
 
 ## Enumerações
-Palavra chave> **enum**
+- **enum**
 >Um tipo de enum é um tipo de dados especial que permite que uma variável seja um conjunto de constantes predefinidas
 ```java
 public enum Dia {
     SEGUNDA, TERÇA, QUARTA, QUINTA, SEXTA, SABADO, DOMINGO 
 }
+```
+
+## Anotações
+São avisos antecipados para o compilador.
+- **@Override**:
+
+
+## Polimorfismo
+### Upcasting
+Converte um objeto da subclasse para superclasse.
+```java
+Exemplo exe = New SubExemplo();
+```
+
+### Downcasting
+Converte um objeto da superclasse para subclasse.
+```java
+SubExemplo sub = (SubExemplo) exe;
+```
+>Atenção: Devido o compilador nao reconhecer qual subclaase a superclasse recebeu upcasting, devemos realizar a verficação manualmente. Logo devemos usar o instanceof.
+- **instanceof**: Verifica se um objeto é um tipo especifico de classe;
+```java
+if (exe instanceof SubExemplo){
+    SubExemplo sub = (SubExemplo) exe;
+]
 ```
 
 
