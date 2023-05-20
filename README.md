@@ -25,6 +25,15 @@ Exemplo:
 Classe calc = new Classe(); //Sem static
 Classe.Calcular();  //Com static
 ```
+- **abstract**: Não deixa instanciar uma classe.
+```java
+public abstract class Teste()
+
+public static void main(){
+ Teste tt = new Teste();      //Não sera possivel instanciiar
+}
+```
+
 - **super**: Chama a implementação de um superclasse na subclasse.
 - **final**: evita que a classe seja herdada e o metodo nao seja sobreposto
 ```java
@@ -51,6 +60,7 @@ São avisos antecipados para o compilador.
 
 
 ## Polimorfismo
+
 ### Upcasting
 Converte um objeto da subclasse para superclasse.
 ```java
