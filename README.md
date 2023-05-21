@@ -88,15 +88,20 @@ public class Print<T>{
 ```
 ### Genericos delimitados
  _Exemplo completo_:
- ```java
-public static <T extends Comparable<? super T>> T max(List<T> list) //É um tipo comparavel T ou qualquer superclasse do produto
+```java
+//É um tipo comparavel T ou qualquer superclasse do produto
+public static <T extends Comparable<? super T>> T max(List<T> list) 
 ```
 ## Tipos coringas
 - **<?>**: Recebe qualquer tipo de lista
 >Ressaltando: Não é possivel adicionar dados a uma coleção de tipo coringa.
 ### Coringas delimitados
  ```java
-public static double totalArea <List<? extends Figura> list) // A lista pode ser uma Figura(suberclasse) ou qualquer subclasse de figura
+//A lista pode ser uma Figura(suberclasse) ou qualquer subclasse de figura.
+public static double totalArea <List<? extends Figura> list) 
+
+//Pode ser uma Figura ou qulquer superClasse de Figura.
+List<? super Figure> myFig = myObject; 
 ```
 
 
