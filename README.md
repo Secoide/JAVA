@@ -30,7 +30,7 @@ Classe.Calcular();  //Com static
 public abstract class Teste()
 
 public static void main(){
- Teste tt = new Teste();      //Não sera possivel instanciiar
+ Teste tt = new Teste();      //Não sera possivel instanciar
 }
 ```
 >Atenção: Se um metodo é abstrato a classe obrigatoriamente devera ser abstrata também.
@@ -55,9 +55,16 @@ public enum Dia {
 }
 ```
 
+## Interface
+Interface é um tipo que define um conjunto de operações que uma classe deve implementar.
+- **implements**: 
+
+### Comparable
+- **default**:
+
 ## Anotações
 São avisos antecipados para o compilador.
-- **@Override**:
+- **@Override**: Avisa que o metodo esta sendo sobreposta.
 
 
 ## Polimorfismo
