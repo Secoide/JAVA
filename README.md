@@ -109,8 +109,22 @@ List<? super Figure> myFig = myObject;
 São avisos antecipados para o compilador.
 - **@Override**: Avisa que o metodo esta sendo sobreposta.
 
-
-
+## Listas
+- **List** --> ArrayList
+- **Set** --> HashSet: Mais rapido, mas não tem ordenação.
+          --> TreeSet: mais lento e ordenado pelo compareTo do objeto
+                .addAll(a): Adcionado uma lista em outra;
+                .retainAll(a): Remove tudo que for igual entre as duas listas;
+                .removeAll(a): Remove tudo que contem e uma lista.
+          --> LinkedHashSet: velocidade intermediaria e elementos na ordem em que são adicionados.]
+- **Map** --> è uma coleção de pares chave / valor. >Não admite repetições do objeto chave.
+  --> HashMap, TreeMap e LinkedHashMap.
+     .put(k,v): Inserir um elemento;
+     .remove(k): Remove a partir da chave;
+     .containsKey(k): Verifica se contem uma determinada chave;
+     .get(k): Recupera uma chave pela chave;
+     .
+     
 ## Polimorfismo
 ### Upcasting
 Converte um objeto da subclasse para superclasse.
