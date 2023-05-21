@@ -41,7 +41,6 @@ public static void main(){
 public final class Exemplo
 public class Subexemplo extends Exemplo //Erro: não é possivel extender classe com final
 
-
 public final void Teste() //qualquer outra subClasse extendida, não poderá sobrepor este metodo.
 ```
 
@@ -58,17 +57,56 @@ public enum Dia {
 ## Interface
 Interface é um tipo que define um conjunto de operações que uma classe deve implementar.
 - **implements**: 
+-- **default**: Prover implementação padrão para métodos na classe interface.
+```java
+public interface Contrato {
+     
+     default double alugar(){    //metodo concreto aplicado direto na classe interface
+          //codigos aqui.
+          reuturn;
+     }
+}
+```
 
 ### Comparable
-- **default**:
+
+## Generics
+Permite que classes, interfaces e métodos possam ser parametrizados por tipo. Utilizado geralmente em *coleções*.
+> **<T>**: garante que a classe esteja parametrizada recebendo qualquer objeto (generics).
+```java
+public class Print<T>{
+  private List<T> list = new ArrayList<>();
+ 
+  public void addValue(T value){
+    list.add(value);
+  }
+ 
+  public T printTeste() {
+   return list.get(0); 
+  }
+}
+```
+### Genericos delimitados
+ _Exemplo completo_:
+ ```java
+public static <T extends Comparable<? super T>> T max(List<T> list) //É um tipo comparavel T ou qualquer superclasse do produto
+```
+## Tipos coringas
+- **<?>**: Recebe qualquer tipo de lista
+>Ressaltando: Não é possivel adicionar dados a uma coleção de tipo coringa.
+### Coringas delimitados
+ ```java
+public static double totalArea <List<? extends Figura> list) // A lista pode ser uma Figura(suberclasse) ou qualquer subclasse de figura
+```
+
 
 ## Anotações
 São avisos antecipados para o compilador.
 - **@Override**: Avisa que o metodo esta sendo sobreposta.
 
 
-## Polimorfismo
 
+## Polimorfismo
 ### Upcasting
 Converte um objeto da subclasse para superclasse.
 ```java
