@@ -123,7 +123,17 @@ São avisos antecipados para o compilador.
      .remove(k): Remove a partir da chave;
      .containsKey(k): Verifica se contem uma determinada chave;
      .get(k): Recupera uma chave pela chave;
-     .
+     .clear(): Limpar o conjunto;
+     .size(): Obter o tamanho;
+     .keySet(): retorna um Set<k>. k = chaves do map;
+     .values(): retorna um Collecion<V>.
+   
+
+## Expressão Lambda 
+() -> {}
+>Lado esquerdo recebe os parametros, depois da seta, implementa a função que ira trabalhar com os parametros.
+
+
      
 ## Polimorfismo
 ### Upcasting
